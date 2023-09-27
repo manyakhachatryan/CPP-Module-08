@@ -64,6 +64,7 @@ unsigned int Span::longestSpan()
 {
 	if(_numbers.size()<=1)
 		throw "Exception: there are no numbers stored,or only one";
+
 	std::sort(_numbers.begin(), _numbers.end());
 	return _numbers[_numbers.size() - 1] - _numbers[0];
 }

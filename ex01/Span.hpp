@@ -29,5 +29,4 @@ class Span
 		unsigned int _n;
 };
 
-
 #endif

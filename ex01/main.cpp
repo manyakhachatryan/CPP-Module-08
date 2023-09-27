@@ -23,7 +23,6 @@ int main()
 		sp1.addNumber(11);
 		std::cout << sp1.shortestSpan() << std::endl;
 		std::cout << sp1.longestSpan() << std::endl;
-
 	}
 	catch (const char* msg) {
     	std::cout << msg << std::endl;

@@ -7,15 +7,14 @@ template <typename T>
 
 int easyfind(const T& arr, int num)
 {
-	typename T::const_iterator c_it = arr.begin();
-	for(; c_it != arr.end(); ++c_it)
+	typename T::const_iterator c_it;
+	c_it = std::find(arr.begin(), arr.end(), num);
+	if (c_it != arr.end())
 	{
-		if (*c_it == num)
-		{
-			std::cout << "Finded!!!" << std::endl;
-			return(0);
-		}
+		std::cout << "Finded!!!" << std::endl;
+		return(0);
 	}
+
 	throw "Exception: Occurrence is not found!!";
 }
 

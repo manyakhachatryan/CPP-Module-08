@@ -12,8 +12,8 @@ int main()
 	std::array<int, 5> arr = {1, 3, 5, 7, 9};
 	try
 	{
-		easyfind(arr, 150);
-		//easyfind(numbers, 5);
+		//easyfind(arr, 9);
+		easyfind(numbers, 10);
 	}
 	catch (const char* msg) {
     	std::cout << msg << std::endl;

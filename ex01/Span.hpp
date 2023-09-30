@@ -25,7 +25,7 @@ class Span
 			}
 		}
 	private :
-		std::vector<int> _numbers;
+		std::vector<unsigned int> _numbers;
 		unsigned int _n;
 };
 

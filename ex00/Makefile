@@ -1,24 +1,23 @@
 NAME		= easyfind
-SRCS    	= main.cpp
+SRCS		= main.cpp
 OBJS		= $(SRCS:.cpp=.o)
-CFLAGS		= -Wall -Wextra -Werror -std=c++98
-RM			= rm -f
+CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
 CPP			= c++
-
+RM			= rm -f
 
 all: $(NAME)
 
 $(NAME) : $(OBJS)
-		@echo $(NONE)$(BLUE) "\n\t\t🤹 Compiling $(NAME)... \n" $(NONE)
-		$(CPP) $(CFLAGS) $(OBJS) -o $(NAME)
-		@echo $(NONE)$(BLUE)"\n\t\t😱 Compiled   $(NAME)\n"$(NONE)
+		@echo  "\n\t\t🤹 Compiling $(NAME)... \n" 
+		$(CPP) $(CXXFLAGS) $(OBJS) -o $(NAME)
+		@echo "\n\t\t😱 Compiled   $(NAME)\n"
 
 clean	:
-		@echo $(YELLOW) "\n\t\t🙀 Removing object files...\n" $(NONE)
+		@echo "\n\t\t🙀 Removing object files...\n"
 		$(RM) $(OBJS)
 
 fclean	: 	clean
-			@echo $(MAGENTA) "\n\t\t🙀 Removing $(NAME)...\n" $(NONE)
+			@echo "\n\t\t🙀 Removing $(NAME)...\n"
 			$(RM) $(NAME)  
 			rm -rf ~/LIbrary/Caches
 

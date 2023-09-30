@@ -46,7 +46,7 @@ unsigned int Span::shortestSpan()
 {
 	if(_numbers.size()<=1)
 		throw "Exception: there are no numbers stored,or only one";
-	std::vector< int>::iterator itr = _numbers.begin();
+	std::vector<unsigned int>::iterator itr = _numbers.begin();
 	std::sort(_numbers.begin(), _numbers.end());
 	unsigned int min = *(itr+1)-(*itr);
 
